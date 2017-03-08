@@ -1,0 +1,202 @@
+ body,html{
+ 	width:100%;
+ 	height:100%;
+ 	margin:0;
+ 	padding:0;
+ 	font-family: "microsoft yahei";
+ }
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.timeline{
+	position:relative;
+	width:1200px;
+	margin:0 auto;
+}
+.timeline .timeline-head{
+   	width:100%;
+	margin-bottom:0;
+	background:#00bcd4;
+	height:42px;
+	margin-top:15px;
+	position:relative;
+    overflow: hidden;
+}
+.timeline .timeline-head .timeline-head-content{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.timeline .timeline-head .dateGroup.year{
+	border-left:1px solid #fff;
+	position:absolute;
+	top:0;
+	width:384px;
+	/*display:inline-block;*/
+	cursor:pointer;
+	word-spacing:0;
+}
+.timeline .timeline-head .dateGroup.month{
+	border-left:1px solid #fff;
+	position:absolute;
+	top:0;
+	cursor:pointer;
+}
+.timeline .timeline-head .dateGroup .showDate{
+	font-size:14px;
+	color:#fff;
+	line-height:24px;
+	text-indent:4px;
+	font-weight:600;
+}
+.timeline .timeline-head .dateGroup .line{
+	position:relative;				
+}
+
+.timeline .timeline-head .dateGroup .line .scale{
+	float:left;
+	width:31px;
+	height:18px;
+	border-left:1px solid #fff;	
+	bottom:0;	
+	position:relative;	
+	color:#fff;
+	font-size:12px;	
+	/*text-indent:4px;*/
+	text-align:center;
+	line-height:12px;
+}
+.timeline .timeline-head .dateGroup .line .scale:after{
+	/*content:' ';
+	top:-6px;
+	left:-2px;
+	position:absolute;
+	display:block;
+	width:6px;
+	height:6px;
+	border-radius:6px;
+	background:red;*/
+}
+.timeline .timeline-head .dateGroup:nth-of-type(1){
+	border:1px solid #00bcd4;
+}
+.timeline .timeline-head .dateGroup .line .scale:nth-of-type(1){
+	border-left:none;	
+}
+.timeline .timeline-footer {
+	height:30px;
+	background:#8e8e8e;
+	position:relative;
+}
+.timeline .timeline-footer .customType{
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-420px;
+	height:30px;
+	line-height:25px;
+}
+.timeline .timeline-footer .customType .changeType{
+    width:60px;
+    height:20px;
+    line-height:20px;
+    border:1px solid #CACACA;
+    vertical-align:middle;
+    outline:none;
+    font-size:12px;
+}
+.timeline .timeline-footer .customType .gotoInput{
+	width:80px;
+	height:18px;
+	line-height:18px;
+	border:1px solid #CACACA;
+    vertical-align:middle;
+    text-indent:6px;
+    font-size:12px;
+    outline:none;
+    margin:0 4px;   
+}
+.timeline .timeline-footer .customType button.goto{
+	height:20px;
+	line-height:20px;
+	padding:0 6px;
+	background:#00bcd4;
+	color:#fff;
+	font-size:12px;
+	border:1px solid #00bcd4;
+	vertical-align:middle;
+	cursor:pointer;
+}
+.timeline .timeline-footer .tl-footer-center{
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-140px;
+	width:280px;
+	height:30px;
+	z-index:200;		
+}
+.timeline .timeline-footer .tl-footer-center .timeline-prev,
+.timeline .timeline-footer .tl-footer-center .timeline-next{
+	text-align:right;
+	float:left;
+	line-height:30px;
+	padding-right:8px;
+	width:62px;
+	cursor:pointer;
+	color:#b8d4d8;
+	font-size:14px;
+}
+.timeline .timeline-footer .tl-footer-center .timeline-next{
+	text-align:left;
+	padding-left:8px;
+	padding-right:0;
+}
+.timeline .timeline-footer .tl-footer-center .timeline-prev:hover,
+.timeline .timeline-footer .tl-footer-center .timeline-next:hover{
+	color:#a5c9ce;
+}
+.timeline .timeline-footer .tl-footer-center .showCurDate{
+    float:left;
+	background:#cacaca;
+	width:140px;
+	height:30px;
+	font-size:14px;	
+	font-weight:600;
+	text-align:center;
+	line-height:30px;	
+	cursor:pointer;
+}
+.timeline .timeline-footer .tl-footer-center .showCurDate::after{
+	content:'';
+	position:absolute;
+	top:-8px;
+	left:50%;
+	margin-left:-7px;
+	display:block;
+	border-color:inherit;
+	border-left:8px solid transparent;
+	border-right:8px solid transparent;
+	border-bottom:8px solid #cacaca;	
+}
+/*参考线*/
+.timeline .referenceLine{ 
+	position:absolute;
+	top:0;
+	left:50%;
+	width:1px;
+	height:100%;
+	border-left:1px dashed #d4d4d4;
+}
+.noselect {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
